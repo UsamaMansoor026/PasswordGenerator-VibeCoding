@@ -47,5 +47,7 @@ function copyToClipboard() {
 
 // Generate initial password on first load (length 6, alphabets only)
 window.addEventListener("DOMContentLoaded", () => {
-  generatePassword(6, false, false);
+  setTimeout(() => {
+    generatePassword(6, false, false);
+  }, 1400);
 });
