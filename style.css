@@ -29,7 +29,7 @@ html {
 .card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  padding: 30px;
+  padding: 20px 30px;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -37,6 +37,23 @@ html {
   max-width: 500px;
   animation: bounceIn 1s ease-out forwards;
   animation-delay: 0.3s;
+}
+
+/* Title Styles */
+.card-title {
+  font-size: 2rem;
+  margin-top: 0;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Divider (hr) Styles */
+.divider {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid #fff;
 }
 
 .input-group {
