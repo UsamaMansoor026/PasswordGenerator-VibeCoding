@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vibe Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="input-group">
+          <input
+            type="text"
+            id="password"
+            placeholder="Your password will appear here..."
+            readonly
+          />
+          <span class="copy-icon" id="copyBtn" onclick="copyToClipboard()"
+            >📋</span
+          >
+        </div>
+
+        <!-- Password Options -->
+        <div class="options">
+          <div class="option-row">
+            <p>Password Length:</p>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="length" value="6" checked /> 6</label
+              >
+              <label><input type="radio" name="length" value="8" /> 8</label>
+              <label><input type="radio" name="length" value="10" /> 10</label>
+              <label><input type="radio" name="length" value="12" /> 12</label>
+            </div>
+          </div>
+
+          <div class="option-row">
+            <label class="checkbox-group">
+              <input type="checkbox" id="includeNumbers" />
+              <span>Include Numbers</span>
+            </label>
+          </div>
+
+          <div class="option-row">
+            <label class="checkbox-group">
+              <input type="checkbox" id="includeSymbols" />
+              <span>Include Special Characters</span>
+            </label>
+          </div>
+        </div>
+
+        <button class="btn">Generate Password</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
